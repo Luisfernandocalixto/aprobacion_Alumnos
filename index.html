@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de alumnos</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+  <section class="contenedor">
+
+    <form id="formulario">
+      <h1>Lista de alumnos</h1>
+      <h3>Ingrese datos de alumnos</h3>
+
+      <label for="name">Nombre completo:</label>
+      <input type="name" class="nombreEntrada" id="nombreEntrada" name="name" placeholder="Ingrese un nombre"
+        pattern="([a-zA-ZÁÉÍÓÚñáéíóú]{1,}[\s]*)+" required>
+      <div id="nombreError"></div>
+      <label for="">Calificación:</label>
+      <input type="number" placeholder="Ingrese calificación" id="calificacion" min="0" max="10" required>
+      <br>
+      <button type="submit">Enviar</button>
+
+    </form>
+
+    <table>
+
+      <tr id="mensaje"></tr>
+
+    </table>
+
+  </section>
+  
+  <div class="r">
+    <img src="./img/mateaplicada.jpg" alt="">
+  </div>
+ 
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
